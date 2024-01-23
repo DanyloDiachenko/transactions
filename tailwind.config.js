@@ -2,11 +2,11 @@
 export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
+		container: {
+			padding: "2rem",
+			center: true,
+		},
 		extend: {
-			container: {
-				padding: "2rem",
-				center: true,
-			},
 			fontFamily: {
 				roboto: ["Roboto", "sans-serif"],
 			},
