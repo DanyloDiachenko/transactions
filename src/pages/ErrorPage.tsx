@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import img from "../assets/404.png";
 
 export const ErrorPage = () => {
 	return (

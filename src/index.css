@@ -18,7 +18,7 @@
 		@apply flex gap-2 items-center text-white py-2 px-4 rounded-md;
 	}
 	.input {
-		@apply bg-transparent p-2 border bg-slate-700 bg-transparent placeholder:text-white rounded-md outline-none focus:border-slate-300;
+		@apply bg-transparent p-2 border bg-slate-700 bg-transparent placeholder:text-white rounded-md outline-none focus:border-slate-300 placeholder:text-sm;
 	}
 	.container {
 		@apply max-w-[1000px];
