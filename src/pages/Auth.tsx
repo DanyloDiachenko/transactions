@@ -56,7 +56,7 @@ export const Auth = () => {
 				setIsLogin(!isLogin);
 
 				toast.success("You logged in.");
-				navigate("/");
+				navigate("/transactions");
 			}
 		} catch (err: any) {
 			console.log(err);
