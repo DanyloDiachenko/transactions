@@ -2,16 +2,29 @@ import { toast } from "react-toastify";
 
 import { instance } from "../api/axios.api";
 import { TransactionForm } from "../components/TransactionForm";
-import { ICategory } from "../types/types";
+import {
+	ICategory,
+	IResponseTransactionLoader,
+	ITransaction,
+} from "../types/types";
 import { TransactionTable } from "../components/TransactionTable";
+import { useLoaderData } from "react-router-dom";
+import { formatToUSD } from "../helpers/currency.helper";
+import { Chart } from "../components/Chart";
 
 export const transactionLoader = async () => {
 	const categories = await instance.get<ICategory[]>("/categories");
-	const transactions = await instance.get("/transactions");
+	const transactions = await instance.get<ITransaction[]>("/transactions");
+	const totalIncome = await instance.get<number>("/transactions/income/find");
+	const totalExpense = await instance.get<number>(
+		"/transactions/expense/find",
+	);
 
 	const data = {
 		categories: categories.data,
 		transactions: transactions.data,
+		totalIncome: totalIncome.data,
+		totalExpense: totalExpense.data,
 	};
 
 	return data;
@@ -46,6 +59,9 @@ export const transactionAction = async ({ request }: any) => {
 };
 
 export const Transactions = () => {
+	const { totalIncome, totalExpense } =
+		useLoaderData() as IResponseTransactionLoader;
+
 	return (
 		<>
 			<div className="grid grid-cols-3 gap-4 mt-4 items-start">
@@ -59,7 +75,7 @@ export const Transactions = () => {
 								Total Income:
 							</p>
 							<p className="bg-green-600 p-1 rounded-sm text-center mt-2">
-								1000$
+								{formatToUSD.format(totalIncome)}$
 							</p>
 						</div>
 						<div>
@@ -67,14 +83,17 @@ export const Transactions = () => {
 								Total Expense:
 							</p>
 							<p className="bg-red-500 p-1 rounded-sm text-center mt-2">
-								1000$
+								{formatToUSD.format(totalExpense)}$
 							</p>
 						</div>
 					</div>
-					<>chart</>
+					<Chart
+						totalIncome={totalIncome}
+						totalExpense={totalExpense}
+					/>
 				</div>
 			</div>
-			<TransactionTable />
+			<TransactionTable limit={5} />
 		</>
 	);
 };
