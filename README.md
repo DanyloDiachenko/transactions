@@ -1,3 +1,25 @@
+stage: production ready
+(not hosted)
+
+# Transactions
+### Stack:
+- React (ver. 18.2.0)
+- Redux Toolkit (ver. 2.1.0)
+- Redux (ver. 5.0.1)
+- React Router DOM (ver. 6.21.3)
+- TailwindCSS (ver. 3.4.1)
+- Axios (ver. 1.6.5)
+- Recharts (ver. 2.11.0)
+- TypeScript (ver. 5.2.2)
+- Vite (ver. 5.0.8)
+
+### Additional:
+- Prettier
+
+### Links / for developers:
+- Backend api: https://github.com/DanyloDiachenko/transactions-api
+
+### Screenshots:
 <img width="1800" alt="Screenshot 2024-01-27 at 15 50 16" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/74b650ee-6313-4a7c-b703-6084e617e479">
 <img width="1800" alt="Screenshot 2024-01-27 at 15 50 26" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/133a26dc-18ea-4977-9444-a2f8feba5780">
 <img width="1800" alt="Screenshot 2024-01-27 at 15 50 34" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/2dbedb15-918d-4143-854b-b0e4403752ec">
