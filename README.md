@@ -1,30 +1,14 @@
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<img width="1800" alt="Screenshot 2024-01-27 at 15 52 03" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/b047e39c-2599-487c-80fa-8132f8a23b6c">
+<img width="1800" alt="Screenshot 2024-01-27 at 15 51 57" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/24cffcf3-5e7a-422d-8182-05db9a4c6110">
+<img width="1800" alt="Screenshot 2024-01-27 at 15 50 16" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/74b650ee-6313-4a7c-b703-6084e617e479">
+<img width="1800" alt="Screenshot 2024-01-27 at 15 50 26" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/133a26dc-18ea-4977-9444-a2f8feba5780">
+<img width="1800" alt="Screenshot 2024-01-27 at 15 50 34" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/2dbedb15-918d-4143-854b-b0e4403752ec">
+<img width="1800" alt="Screenshot 2024-01-27 at 15 50 49" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/13abd79b-2dcc-4da6-b516-35b022efd1ee">
+<img width="1800" alt="Screenshot 2024-01-27 at 15 51 01" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/d64483e6-e55c-4464-b08d-afdaa8de5c8a">
+<img width="1800" alt="Screenshot 2024-01-27 at 15 51 27" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/3ad2c534-560c-4bd3-8b9d-683814c8c51f">
+<img width="1800" alt="Screenshot 2024-01-27 at 15 51 37" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/68a4575b-87ad-4aa4-b9c8-57955cc3cd4b">
+<img width="1800" alt="Screenshot 2024-01-27 at 15 51 57" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/307cb2ab-4cd6-440c-b132-f179484fa67d">
+<img width="1800" alt="Screenshot 2024-01-27 at 15 52 03" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/c0824a1d-f092-479c-a8c7-aa305d265da8">
+<img width="1800" alt="Screenshot 2024-01-27 at 15 52 10" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/56543717-68a5-4f9b-ad93-dadb775c1c78">
+<img width="1800" alt="Screenshot 2024-01-27 at 15 52 34" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/3a730fce-efae-4822-bc37-c7b9340afe07">
+<img width="1800" alt="Screenshot 2024-01-27 at 15 55 11" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/0b56a863-9a58-42c8-970e-eab3aea7db05">
