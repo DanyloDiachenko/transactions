@@ -1,27 +1,51 @@
-import { useLoaderData } from "react-router-dom";
+import { toast } from "react-toastify";
+
 import { instance } from "../api/axios.api";
 import { TransactionForm } from "../components/TransactionForm";
-import { ICategory, IResponseTransactionLoader } from "../types/types";
+import { ICategory } from "../types/types";
+import { TransactionTable } from "../components/TransactionTable";
 
 export const transactionLoader = async () => {
 	const categories = await instance.get<ICategory[]>("/categories");
+	const transactions = await instance.get("/transactions");
 
 	const data = {
 		categories: categories.data,
+		transactions: transactions.data,
 	};
 
 	return data;
 };
 
-export const transactionAction = async ({ reqest }: any) => {
-	const data = {};
+export const transactionAction = async ({ request }: any) => {
+	switch (request.method) {
+		case "POST": {
+			const formData = await request.formData();
+			const newTransaction = {
+				title: formData.get("title"),
+				amount: +formData.get("amount"),
+				category: formData.get("category"),
+				type: formData.get("type"),
+			};
 
-	return data;
+			await instance.post("/transactions", newTransaction);
+			toast.success("Transaction added.");
+
+			return null;
+		}
+		case "DELETE": {
+			const formData = await request.formData();
+			const transactionId = formData.get("id");
+
+			await instance.delete(`/transactions/transaction/${transactionId}`);
+			toast.success("Transaction deleted.");
+
+			return null;
+		}
+	}
 };
 
 export const Transactions = () => {
-	const { categories } = useLoaderData() as IResponseTransactionLoader;
-
 	return (
 		<>
 			<div className="grid grid-cols-3 gap-4 mt-4 items-start">
@@ -50,7 +74,7 @@ export const Transactions = () => {
 					<>chart</>
 				</div>
 			</div>
-			<h1>table</h1>
+			<TransactionTable />
 		</>
 	);
 };
