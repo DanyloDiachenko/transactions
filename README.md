@@ -1,5 +1,3 @@
-<img width="1800" alt="Screenshot 2024-01-27 at 15 52 03" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/b047e39c-2599-487c-80fa-8132f8a23b6c">
-<img width="1800" alt="Screenshot 2024-01-27 at 15 51 57" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/24cffcf3-5e7a-422d-8182-05db9a4c6110">
 <img width="1800" alt="Screenshot 2024-01-27 at 15 50 16" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/74b650ee-6313-4a7c-b703-6084e617e479">
 <img width="1800" alt="Screenshot 2024-01-27 at 15 50 26" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/133a26dc-18ea-4977-9444-a2f8feba5780">
 <img width="1800" alt="Screenshot 2024-01-27 at 15 50 34" src="https://github.com/DanyloDiachenko/transactions/assets/107757498/2dbedb15-918d-4143-854b-b0e4403752ec">
